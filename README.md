@@ -26,7 +26,7 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
 ## Instruções de Instalação e Execução
 
 1. **Baixar o projeto no GitHub**
-   - [Link do Repositório](INSIRA_LINK_AQUI)
+   - [Link do Repositório](https://github.com/eduardokt/fiap-hackathon)
 
 2. **Acessar a pasta do projeto pelo terminal**
    ```sh
@@ -42,8 +42,12 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
    - Abra o navegador e vá para [http://localhost:89](http://localhost:89)
    - Crie um login e uma senha
 
-5. **Login para Teste**
+5.1. **Login para Teste ADMIN**
    - **Email:** eu@admin.com
+   - **Senha:** 123456
+   
+5.2. **Login para Teste PADRÃO**
+   - **Email:** teste@test.com
    - **Senha:** 123456
 
 6. **Acessar o projeto**
