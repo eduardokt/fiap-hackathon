@@ -1,0 +1,19 @@
+version: "3"
+services:
+
+    nodejs:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      image: client
+      volumes:
+        - ./client:/var/www/client
+      command: sh -c "npm install && npm run start"
+      ports:
+        - "89:89"
+      networks:
+        - default
+
+networks:
+  default:
+    driver: bridge
