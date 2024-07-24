@@ -27,6 +27,7 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
 
 1. **Baixar o projeto no GitHub**
    - [Link do Repositório](https://github.com/eduardokt/fiap-hackathon)
+   https://github.com/eduardokt/fiap-hackathon
 
 2. **Acessar a pasta do projeto pelo terminal**
    ```sh
