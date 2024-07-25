@@ -39,22 +39,12 @@ Coded by www.creative-tim.com
 // import Atribuicao from "layouts/atribuicao";
 import Ongs from "layouts/ongs";
 import Perfil from "layouts/perfil";
-// import Tarefas from "layouts/tarefas";
-// import Alocacao from "layouts/alocacao";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 // @mui icons
 import Icon from "@mui/material/Icon";
 
 const routes = [
-  // {
-  //   type: "collapse",
-  //   name: "Sair",
-  //   key: "logout",
-  //   icon: <Icon fontSize="small">logout</Icon>,
-  //   route: "/authentication/logout",
-  //   component: <Logout />,
-  // },
   {
     type: "collapse",
     name: "Sign In",
@@ -73,7 +63,7 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Cadastro de Ongs",
+    name: "Ongs",
     key: "ongs",
     icon: <Icon fontSize="small">person</Icon>,
     route: "/ongs",
@@ -87,22 +77,6 @@ const routes = [
     route: "/perfil",
     component: <Perfil />,
   },
-  // {
-  //   type: "collapse",
-  //   name: "Atribuição de Tarefas",
-  //   key: "atribuicao",
-  //   icon: <Icon fontSize="small">task</Icon>,
-  //   route: "/atribuicao",
-  //   component: <Atribuicao />,
-  // },
-  // {
-  //   type: "collapse",
-  //   name: "Tempo de Alocação",
-  //   key: "alocacao",
-  //   icon: <Icon fontSize="small">schedule</Icon>,
-  //   route: "/alocacao",
-  //   component: <Alocacao />,
-  // }
 ];
 
 export default routes;

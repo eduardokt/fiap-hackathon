@@ -499,7 +499,7 @@ function Tables() {
                 coloredShadow="info"
               >
                 <MDTypography variant="h6" color="white">
-                Cadastro de Ongs
+                Cadastro e Inscrição de Ongs
                 </MDTypography>
               </MDBox>
 

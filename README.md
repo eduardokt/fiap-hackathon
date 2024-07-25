@@ -40,7 +40,7 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
    ```
 
 4. **Acessar o sistema**
-   - Abra o navegador e vá para [http://localhost:89](http://localhost:89)
+   - Abra o navegador e vá para [http://localhost:89/authentication/sign-in](http://localhost:89/authentication/sign-in)
    - Crie um login e uma senha
 
 5.1. **Login para Teste ADMIN**
@@ -66,28 +66,43 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
 #### ONGs
 - **[GET]** Listar todas as ONGs: `http://localhost:3000/api/ongs`
 - **[POST]** Criar nova ONG: `http://localhost:3000/api/ongs/new`
-- **[GET]** Visualizar ONG específica: `http://localhost:3000/api/ongs/:id`
 - **[PUT]** Atualizar ONG: `http://localhost:3000/api/ongs/update/:id`
 - **[DELETE]** Deletar ONG: `http://localhost:3000/api/ongs/delete/:id`
 
 #### Perfis de Usuário
-- **[GET]** Listar perfis: `http://localhost:3000/api/profiles`
-- **[POST]** Criar novo perfil: `http://localhost:3000/api/profiles/new`
-- **[PUT]** Atualizar perfil: `http://localhost:3000/api/profiles/update/:id`
+- **[GET]** Listar perfis: `http://localhost:3000/api/perfil`
+- **[POST]** Lista perfil especifico: `http://localhost:3000/api/perfil/uid`
+- **[POST]** Criar novo perfil: `http://localhost:3000/api/perfil/new`
+- **[PUT]** Atualizar perfil: `http://localhost:3000/api/perfil/update/:id`
+- **[DELETE]** Deletar perfil: `http://localhost:3000/api/perfil/delete/:id`
 
 #### Localização
-- **[GET]** Listar locais: `http://localhost:3000/api/locations`
-- **[POST]** Criar novo local: `http://localhost:3000/api/locations/new`
-- **[GET]** Visualizar local específico: `http://localhost:3000/api/locations/:id`
-- **[PUT]** Atualizar local: `http://localhost:3000/api/locations/update/:id`
-- **[DELETE]** Deletar local: `http://localhost:3000/api/locations/delete/:id`
+- **[GET]** Listar Estados/Cidades: `http://localhost:3000/api/estados_cidades`
+- **[POST]** Criar novo local: `http://localhost:3000/api/estados_cidades/new`
+- **[PUT]** Atualizar local: `http://localhost:3000/api/estados_cidades/update/:id`
+- **[DELETE]** Deletar local: `http://localhost:3000/api/estados_cidades/delete/:id`
 
-#### Administração
-- **[GET]** Listar tarefas administrativas: `http://localhost:3000/api/admin/tasks`
-- **[POST]** Criar nova tarefa administrativa: `http://localhost:3000/api/admin/tasks/new`
-- **[GET]** Visualizar tarefa administrativa específica: `http://localhost:3000/api/admin/tasks/:id`
-- **[PUT]** Atualizar tarefa administrativa: `http://localhost:3000/api/admin/tasks/update/:id`
-- **[DELETE]** Deletar tarefa administrativa: `http://localhost:3000/api/admin/tasks/delete/:id`
+
+#### Inscrições
+- **[GET]** Listar inscrições: `http://localhost:3000/api/estados_cidades`
+- **[POST]** Lista inscrições de especifico de um usuario: `http://localhost:3000/api/perfil/uid`
+- **[POST]** Criar nova inscrição: `http://localhost:3000/api/estados_cidades/new`
+- **[PUT]** Atualizar inscrição: `http://localhost:3000/api/estados_cidades/update/:id`
+- **[DELETE]** Deletar inscrição: `http://localhost:3000/api/estados_cidades/delete/:id`
+
+#### Membros
+- **[GET]** Listar Membros: `http://localhost:3000/api/members`
+- **[POST]** Criar novo Membros: `http://localhost:3000/api/members/new`
+- **[PUT]** Atualizar Membros: `http://localhost:3000/api/members/update/:id`
+- **[DELETE]** Deletar Membros: `http://localhost:3000/api/members/delete/:id`
+
+
+#### Admin
+- **[GET]** Listar admins: `http://localhost:3000/api/admin`
+- **[POST]** Listar admin especifico: `http://localhost:3000/api/admin/uid`
+- **[POST]** Criar novo admin: `http://localhost:3000/api/admin/new`
+- **[PUT]** Atualizar admin: `http://localhost:3000/api/admin/update/:id`
+- **[DELETE]** Deletar admin: `http://localhost:3000/api/admin/delete/:id`
 
 ## Tecnologias e Ferramentas Utilizadas
 
@@ -102,7 +117,3 @@ O projeto se destaca pela robustez das funcionalidades oferecidas e pela ênfase
 - **Material UI:** Biblioteca de componentes de interface de usuário para React, oferecendo elementos estilizados e prontos para uso.
 - **Docker:** Plataforma de containers para criar, implantar e executar aplicações de forma isolada e consistente.
 - **Dotenv:** Criação de variáveis de ambiente.
-
-## Pontos Fortes do Projeto
-
-O projeto se destaca pela robustez das funcionalidades e pela ênfase na usabilidade. A implementação de permissões diferenciadas para usuários padrão e admins melhora a gestão das ONGs e oferece uma experiência de usuário mais segura e organizada. A integração com o Firebase para validação de senhas reforça a segurança, enquanto a capacidade de busca e paginação na listagem de ONGs facilita a navegação e a gestão. Além disso, a adaptação para diferentes dispositivos amplia o alcance e a acessibilidade da aplicação, tornando-a uma ferramenta versátil para o gerenciamento de ONGs.
